@@ -28,6 +28,12 @@ class Deck(object):
                 deck.append(card)
         return deck
 
+    def list_deck_of_cards(self):
+        """
+        Prints the cards in the current deck
+        """
+        print(self.deck)
+
     def shuffle(self):
         """
         Shuffles the deck of cards which returns a new set of deck of cards.
