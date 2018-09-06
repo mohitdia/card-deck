@@ -32,7 +32,8 @@ class Deck(object):
         """
         Prints the cards in the current deck
         """
-        print(self.deck)
+        for card in self.deck:
+            print(card)
 
     def shuffle(self):
         """
