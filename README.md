@@ -1,6 +1,6 @@
 # Card deck project
 
-This project defines two classes - Card and Deck. The Card class represents a card in a deck. The Deck class represents a deck of cards and has methods to initialize the deck, shuffle cards in the deck and to deal one card from the deck.
+This project defines two classes - Card(in card.py) and Deck(in deck.py). The Card class represents a card in a deck. The Deck class represents a deck of cards and has methods to initialize the deck, list cards in a deck, shuffle cards in the deck and to deal one card from the deck. When the deck is empty after dealing one card 52 items we return a `Deck is empty` message from the `deal_one_card` method
 
 To run the code follow these steps:
 
