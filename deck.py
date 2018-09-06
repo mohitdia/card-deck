@@ -33,7 +33,13 @@ class Deck(object):
         Shuffles the deck of cards which returns a new set of deck of cards.
         @return List of shuffled card objects
         """
-        self.deck = random.sample(self.deck, len(self.deck))
+        index_choices = list(range(len(self.deck)))
+        new_deck = []
+        for card in self.deck:
+            random_index = random.choice(index_choices)
+            new_deck.append(self.deck[random_index])
+            index_choices.remove(random_index)
+        self.deck = new_deck
 
     def deal_one_card(self):
         """
